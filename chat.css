@@ -12,8 +12,8 @@ body {
 
 .main-card {
       width: 96%;
-      max-width: 400px;
-      height: calc(100% - 32px) !important;
+      max-width: 300px;
+      height: calc(100% - 100px) !important;
       border-radius: 8px !important;
       max-height: 600px;
     margin: 16px!important;
@@ -75,9 +75,21 @@ body {
 
 .chat-area {
     flex-grow: 1;
-    overflow: auto;
+    overflow: hidden;
     border-radius: 8px;
     padding: 16px;
     display: flex;
     flex-direction: column;
+    color: black;
+}
+
+#chat-timestamp{
+    position: relative;
+    left: 105px;
+}
+
+#message{
+    position: relative;
+    width: 290px;
+    height: 30px;
 }
