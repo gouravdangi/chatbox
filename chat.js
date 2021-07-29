@@ -2,10 +2,7 @@ window.onload = ()=>{
     
 document.getElementById("chatbot_toggle").onclick = function () {
     if (document.getElementById("chatbot").classList.contains("collapsed")) {
-        document.getElementById("chatbot").classList.remove("collapsed")
-        document.getElementById("chatbot_toggle").children[0].style.display = "none"
-        document.getElementById("chatbot_toggle").children[1].style.display = ""
-        setTimeout(addResponseMsg, 1000, "Hi")
+        document.getElementById("chatbot").classList.remove("collapsed");
     }
     else {
         document.getElementById("chatbot").classList.add("collapsed");
@@ -52,6 +49,9 @@ let getResponse = ()=>{
     console.log(userHtml);
     $("#message").val("");
     $("#message-box").append(userHtml);
+    document.getElementById("message-box").scrollTop = document.getElementById(
+        "message-box"
+    ).scrollHeight;
 }
 
 $("#message").keypress(async(e)=>{
