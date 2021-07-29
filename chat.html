@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chatbox</title>
     <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -25,7 +26,11 @@
                 <div class="input-div">
                     <input class="input-message" name="message" type="text" id="message"
                         placeholder="Press 'Enter' to send a message" />
-                    <p></p>
+                    
+                        <p></p>
+                        <div class="chat-bar-icons">
+                              <i id = "chat-icon" style="color : black;" class="fa fa-fw fa-send" onclick = "sendbutton()"></i>
+                        </div>
                 </div>
             </div>
         </div>
