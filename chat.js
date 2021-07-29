@@ -6,8 +6,6 @@ document.getElementById("chatbot_toggle").onclick = function () {
         setTimeout(addResponseMsg, 1000, "Hi")
     }
     else {
-        document.getElementById("chatbot").classList.add("collapsed")
-        document.getElementById("chatbot_toggle").children[0].style.display = ""
-        document.getElementById("chatbot_toggle").children[1].style.display = "none"
+        document.getElementById("chatbot").classList.add("collapsed");
     }
 }
